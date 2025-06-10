@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tips Belajar - GradePredictor</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/global.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/studytips.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>GradePredictor</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="{{ url_for('halaman_utama') }}">Beranda</a></li>
+            <li><a href="{{ url_for('halaman_prediksi') }}">Prediksi</a></li>
+            <li><a href="{{ url_for('halaman_tentang') }}">Tentang</a></li>
+            <li class="active">
+              <a href="{{ url_for('halaman_tips') }}">Tips Belajar</a>
+            </li>
+            <li><a href="{{ url_for('halaman_kontak') }}">Kontak</a></li>
+          </ul>
+        </nav>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <section class="page-title-header">
+      <div class="container">
+        <h1>Tips Belajar Efektif</h1>
+        <p>
+          Kumpulan metode dan strategi untuk meningkatkan kualitas belajar Anda
+        </p>
+      </div>
+    </section>
+
+    <main class="tips-container">
+      <div class="tip-category">
+        <h2><i class="fas fa-clock"></i> Manajemen Waktu</h2>
+        <div class="tip-item">
+          <h3>Jadwalkan Waktu Belajar yang Tetap</h3>
+          <p>
+            Tetapkan jadwal belajar rutin dan konsisten setiap hari. Pilih waktu
+            saat Anda paling fokus dan produktif.
+          </p>
+          <div class="tip-actionable">
+            <strong>Aksi:</strong> Buat jadwal mingguan dengan blok waktu
+            belajar yang tetap, minimal 2 jam per hari.
+          </div>
+        </div>
+        <div class="tip-item">
+          <h3>Teknik Pomodoro</h3>
+          <p>
+            Gunakan teknik Pomodoro dengan belajar fokus selama 25 menit, lalu
+            istirahat 5 menit. Setelah 4 sesi, ambil istirahat lebih lama.
+          </p>
+          <div class="tip-actionable">
+            <strong>Aksi:</strong> Unduh aplikasi timer Pomodoro di HP atau
+            gunakan alarm biasa.
+          </div>
+        </div>
+      </div>
+
+      <div class="tip-category">
+        <h2><i class="fas fa-brain"></i> Teknik Belajar Efektif</h2>
+        <div class="tip-item">
+          <h3>Active Recall</h3>
+          <p>
+            Latih otak untuk mengingat informasi secara aktif. Tutup buku dan
+            coba jelaskan materi dengan kata-kata sendiri.
+          </p>
+          <div class="tip-actionable">
+            <strong>Aksi:</strong> Setelah membaca satu bagian, tutup buku dan
+            tulis poin-poin utama yang Anda ingat.
+          </div>
+        </div>
+        <div class="tip-item">
+          <h3>Spaced Repetition</h3>
+          <p>
+            Ulang materi dalam interval waktu yang semakin meningkat untuk
+            membantu penyimpanan jangka panjang.
+          </p>
+          <div class="tip-actionable">
+            <strong>Aksi:</strong> Review materi setelah 1 hari, 3 hari, 1
+            minggu, dan 2 minggu.
+          </div>
+        </div>
+      </div>
+
+      <div class="tip-category">
+        <h2><i class="fas fa-laptop"></i> Pemanfaatan Teknologi</h2>
+        <div class="tip-item">
+          <h3>Aplikasi Pembelajaran Online</h3>
+          <p>
+            Manfaatkan platform pembelajaran online untuk mendapatkan penjelasan
+            dari berbagai perspektif.
+          </p>
+          <div class="tip-actionable">
+            <strong>Aksi:</strong> Daftar di platform seperti Coursera, Khan
+            Academy, atau YouTube Educational.
+          </div>
+        </div>
+        <div class="tip-item">
+          <h3>Digital Note-Taking</h3>
+          <p>
+            Gunakan aplikasi catatan digital untuk mengorganisir materi
+            pembelajaran dengan lebih baik.
+          </p>
+          <div class="tip-actionable">
+            <strong>Aksi:</strong> Coba aplikasi seperti Notion, Evernote, atau
+            OneNote untuk mencatat.
+          </div>
+        </div>
+      </div>
+
+      <div class="tip-category">
+        <h2><i class="fas fa-users"></i> Belajar Kolaboratif</h2>
+        <div class="tip-item">
+          <h3>Kelompok Belajar</h3>
+          <p>
+            Bergabung atau bentuk kelompok belajar untuk diskusi dan berbagi
+            pemahaman.
+          </p>
+          <div class="tip-actionable">
+            <strong>Aksi:</strong> Ajak 3-4 teman untuk membentuk kelompok
+            belajar rutin mingguan.
+          </div>
+        </div>
+        <div class="tip-item">
+          <h3>Peer Teaching</h3>
+          <p>
+            Mengajarkan materi kepada teman dapat memperkuat pemahaman Anda
+            sendiri.
+          </p>
+          <div class="tip-actionable">
+            <strong>Aksi:</strong> Setelah memahami suatu topik, coba jelaskan
+            ke teman atau keluarga.
+          </div>
+        </div>
+      </div>
+
+      <div class="tip-category">
+        <h2><i class="fas fa-heart"></i> Kesehatan dan Kesejahteraan</h2>
+        <div class="tip-item">
+          <h3>Tidur yang Cukup</h3>
+          <p>
+            Pastikan Anda mendapatkan 7-9 jam tidur setiap malam untuk membantu
+            proses konsolidasi memori.
+          </p>
+          <div class="tip-actionable">
+            <strong>Aksi:</strong> Tetapkan jadwal tidur yang konsisten dan
+            hindari gadget 1 jam sebelum tidur.
+          </div>
+        </div>
+        <div class="tip-item">
+          <h3>Olahraga Rutin</h3>
+          <p>
+            Aktivitas fisik meningkatkan aliran darah ke otak dan membantu
+            meningkatkan fokus.
+          </p>
+          <div class="tip-actionable">
+            <strong>Aksi:</strong> Lakukan minimal 30 menit aktivitas fisik
+            setiap hari.
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h2>GradePredictor</h2>
+            <p>Prediksi Hari Ini, Prestasi Esok Hari</p>
+          </div>
+          <div class="footer-links">
+            <h3>Navigasi</h3>
+            <ul>
+              <li><a href="{{ url_for('halaman_utama') }}">Beranda</a></li>
+              <li><a href="{{ url_for('halaman_prediksi') }}">Prediksi</a></li>
+              <li><a href="{{ url_for('halaman_tentang') }}">Tentang</a></li>
+              <li><a href="{{ url_for('halaman_tips') }}">Tips Belajar</a></li>
+              <li><a href="{{ url_for('halaman_kontak') }}">Kontak</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h3>Hubungi Kami</h3>
+            <p><i class="fas fa-envelope"></i> info@gradepredictor.com</p>
+            <p><i class="fas fa-phone"></i> +62 123 4567 890</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 GradePredictor. Semua hak dilindungi.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/global.js') }}"></script>
+  </body>
+</html>

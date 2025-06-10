@@ -1,0 +1,7 @@
+Python version: 3.11.12 (main, Apr  9 2025, 08:55:54) [GCC 11.4.0]
+pandas version: 2.2.2
+numpy version: 2.0.2
+matplotlib version: 3.10.0
+seaborn version: 0.13.2
+sklearn version: 1.6.1
+pickle version: 4.0
