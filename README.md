@@ -34,7 +34,7 @@ Anda bisa langsung mencoba aplikasi GradePredictor yang sudah kami deploy melalu
 
 ---
 
-## 👨‍💻 Tim Pengembang (Kelompok 3 - LC83)
+## 👨‍💻 Tim Pengembang (Kelompok 3 - LE83)
 
 | Nama | NIM |
 | :--- | :--- |
